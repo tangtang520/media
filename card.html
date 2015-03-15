@@ -114,7 +114,7 @@
 	</style>
 </head>
 
-<body touchstart="start()">
+<body onclick="start()">
 	<!-- Outer Canvas 外层画布 -->
 	<div id="iSlider-wrapper"></div>
 	<aside class="media-wrap">
@@ -180,6 +180,7 @@
 		}
 		var i=0;
 		function start(){
+			console.log('i--->>>',i);
 			if(i>=1){
 				return;
 			}else{
