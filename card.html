@@ -114,14 +114,14 @@
 	</style>
 </head>
 
-<body>
+<body onselectstart="return true;" ondragstart="return false;">
 	<!-- Outer Canvas 外层画布 -->
 	<div id="iSlider-wrapper"></div>
 	<aside class="media-wrap">
 		<span id="musicBtnTxt"></span>
-		<i id="musicBtn" class="music-btn on" onclick="doMusic()"></i>
+		<i id="musicBtn" class="music-btn" onclick="doMusic()"></i>
 	</aside>
-	<audio src="./card/1.m4r" autoplay="autoplay" loop="loop" id="autoplay"></audio>
+	<audio src="./card/1.m4r" loop="loop" id="autoplay"></audio>
 	<div id="iSlider-arrow"></div>
 	<script src="./public/js/islider.js"></script>
 
@@ -156,7 +156,7 @@
 		    }
 		});
 
-		var audio = document.getElementById('autoplay');
+		var audio =  document.getElementById('autoplay');
 		var controller = document.getElementById('musicBtn');
 		var controllerHint = document.getElementById('musicBtnTxt');
 		function doMusic(){
